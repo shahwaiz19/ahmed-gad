@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ahmed Gad | Luxury Real Estate & Strategic Growth</title>
+
+    <meta name="description"
+          content="Ahmed Gad — Senior Sales & Business Development Director specializing in luxury real estate, investor relations, strategic growth and market expansion across Saudi Arabia and GCC.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Caveat:wght@400;500;600&display=swap"
+          rel="stylesheet">
+
+    <style>
+
+        /* =========================================
+           RESET
+        ========================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #090909;
+            color: #f5f3ed;
+            font-family: "DM Sans", sans-serif;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+
+        /* =========================================
+           VARIABLES
+        ========================================= */
+
+        :root {
+            --black: #090909;
+            --black-soft: #111111;
+            --paper: #e9e5da;
+            --paper-light: #f4f1e9;
+            --gold: #b59663;
+            --gold-light: #d3b477;
+            --white: #f5f3ed;
+            --muted: #a9a59c;
+            --line: rgba(255,255,255,.15);
+            --serif: "Playfair Display", serif;
+            --hand: "Caveat", cursive;
+        }
+
+
+        /* =========================================
+           GRAIN / TEXTURE
+        ========================================= */
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            opacity: .055;
+            z-index: 1000;
+
+            background-image:
+                url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E");
+        }
+
+        .texture {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            opacity: .06;
+            background-image:
+                linear-gradient(115deg, transparent 49%, white 49.3%, transparent 49.6%),
+                linear-gradient(65deg, transparent 49%, white 49.3%, transparent 49.6%);
+            background-size: 260px 260px;
+        }
+
+
+        /* =========================================
+           NAVIGATION
+        ========================================= */
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 82px;
+            z-index: 500;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 5vw;
+
+            background: rgba(9,9,9,.72);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255,255,255,.08);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .logo-mark {
+            font-family: var(--serif);
+            color: var(--gold-light);
+            font-size: 30px;
+            letter-spacing: -2px;
+        }
+
+        .logo-name {
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #d5d2ca;
+            transition: .3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold-light);
+        }
+
+        .nav-button {
+            border: 1px solid rgba(255,255,255,.4);
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-size: 10px;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            transition: .3s;
+        }
+
+        .nav-button:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: #111;
+        }
+
+
+        /* =========================================
+           HERO
+        ========================================= */
+
+        .hero {
+            min-height: 100vh;
+            padding: 140px 5vw 70px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 6vw;
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-left {
+            position: relative;
+        }
+
+        .photo-card {
+            position: relative;
+            width: min(570px, 100%);
+            margin: auto;
+
+            background: #e5e0d4;
+            padding: 18px 18px 48px;
+
+            transform: rotate(-2deg);
+
+            box-shadow:
+                0 30px 70px rgba(0,0,0,.55),
+                0 4px 0 rgba(255,255,255,.15);
+        }
+
+        .photo-card::before {
+            content: "";
+            position: absolute;
+            top: -25px;
+            left: 45%;
+            width: 95px;
+            height: 28px;
+            background: rgba(210,190,150,.65);
+            transform: rotate(-4deg);
+            z-index: 4;
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+
+            filter: saturate(.75) contrast(1.05);
+        }
+
+        .photo-caption {
+            color: #111;
+            font-family: var(--hand);
+            font-size: 22px;
+            margin-top: 10px;
+            transform: rotate(-1deg);
+        }
+
+        .floating-label {
+            position: absolute;
+            top: 5%;
+            left: -25px;
+
+            background: var(--paper-light);
+            color: #111;
+
+            padding: 14px 20px;
+
+            font-family: var(--serif);
+            font-size: clamp(22px, 2.2vw, 34px);
+            line-height: 1.05;
+
+            box-shadow: 0 15px 30px rgba(0,0,0,.3);
+            transform: rotate(-4deg);
+            z-index: 5;
+        }
+
+        .experience-note {
+            position: absolute;
+            bottom: -20px;
+            left: -25px;
+
+            width: 150px;
+            padding: 22px 18px;
+
+            background: #eeeae0;
+            color: #111;
+
+            transform: rotate(-3deg);
+
+            box-shadow: 0 20px 40px rgba(0,0,0,.4);
+        }
+
+        .experience-note strong {
+            display: block;
+            font-family: var(--serif);
+            font-size: 27px;
+            margin-bottom: 8px;
+        }
+
+        .experience-note span {
+            font-size: 11px;
+            line-height: 1.5;
+        }
+
+
+        /* HERO RIGHT */
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hello {
+            color: #d7e143;
+            font-family: var(--hand);
+            font-size: 25px;
+            transform: rotate(-3deg);
+            display: inline-block;
+            margin-bottom: -5px;
+        }
+
+        .hero-title {
+            position: relative;
+            font-family: var(--serif);
+            font-weight: 400;
+            font-size: clamp(58px, 7vw, 105px);
+            line-height: .9;
+            letter-spacing: -4px;
+            margin-bottom: 25px;
+        }
+
+        .hero-title::after {
+            content: "";
+            position: absolute;
+
+            width: 105%;
+            height: 55px;
+
+            left: -3%;
+            bottom: -12px;
+
+            border: 3px solid #d7e143;
+            border-radius: 50%;
+
+            transform: rotate(-3deg);
+            opacity: .85;
+        }
+
+        .position {
+            color: var(--gold-light);
+            font-weight: 600;
+            font-size: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+
+        .specialties {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 18px;
+            color: #ddd9d0;
+            font-family: var(--serif);
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .specialties span::after {
+            content: "·";
+            margin-left: 18px;
+            color: var(--gold);
+        }
+
+        .specialties span:last-child::after {
+            display: none;
+        }
+
+        .hero-description {
+            max-width: 650px;
+            color: #aaa79f;
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 32px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 25px;
+            border: 1px solid var(--gold);
+            font-size: 11px;
+            letter-spacing: 1.3px;
+            text-transform: uppercase;
+            transition: .3s;
+        }
+
+        .btn.primary {
+            background: var(--gold);
+            color: #111;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .btn.secondary {
+            border-color: rgba(255,255,255,.45);
+        }
+
+
+        /* =========================================
+           NOTEBOOK
+        ========================================= */
+
+        .notebook-wrapper {
+            padding: 50px 4vw 120px;
+            position: relative;
+        }
+
+        .notebook {
+            max-width: 1350px;
+            margin: auto;
+
+            background: #e9e5da;
+            color: #111;
+
+            border-radius: 28px;
+            padding: 35px;
+
+            position: relative;
+
+            box-shadow:
+                0 40px 100px rgba(0,0,0,.55),
+                inset 0 0 0 1px rgba(0,0,0,.15);
+        }
+
+        .notebook::before {
+            content: "";
+            position: absolute;
+            inset: 15px;
+
+            border: 1px solid rgba(0,0,0,.12);
+            border-radius: 20px;
+
+            pointer-events: none;
+        }
+
+        .notebook-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 620px;
+        }
+
+        .page {
+            padding: 65px 55px;
+            position: relative;
+        }
+
+        .page-dark {
+            background: #151515;
+            color: #eee;
+        }
+
+        .page-light {
+            background: #f4f1e9;
+        }
+
+        .page-title {
+            font-family: var(--serif);
+            font-size: clamp(55px, 6vw, 90px);
+            font-weight: 400;
+            line-height: .85;
+            letter-spacing: -3px;
+            margin-bottom: 45px;
+        }
+
+        .small-label {
+            font-family: var(--hand);
+            color: var(--gold-light);
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+
+        /* =========================================
+           IMPACT
+        ========================================= */
+
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            border-top: 1px solid rgba(255,255,255,.18);
+        }
+
+        .metric {
+            padding: 30px 15px;
+            border-right: 1px solid rgba(255,255,255,.18);
+        }
+
+        .metric:nth-child(3n) {
+            border-right: none;
+        }
+
+        .metric:nth-child(n+4) {
+            border-top: 1px solid rgba(255,255,255,.18);
+        }
+
+        .metric-number {
+            color: var(--gold-light);
+            font-family: var(--serif);
+            font-size: 31px;
+            margin-bottom: 7px;
+        }
+
+        .metric-label {
+            color: #aaa;
+            font-size: 11px;
+            line-height: 1.4;
+        }
+
+
+        /* =========================================
+           STORY
+        ========================================= */
+
+        .story-text {
+            font-family: var(--serif);
+            font-size: 21px;
+            line-height: 1.65;
+            margin-bottom: 35px;
+        }
+
+        .story-list {
+            list-style: none;
+        }
+
+        .story-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(0,0,0,.12);
+            font-size: 13px;
+        }
+
+        .story-list li::before {
+            content: "✓";
+            color: var(--gold);
+            margin-right: 12px;
+            font-weight: bold;
+        }
+
+        .quote {
+            background: #111;
+            color: white;
+            padding: 25px;
+            margin-top: 30px;
+
+            font-family: var(--serif);
+            font-size: 19px;
+            font-style: italic;
+
+            position: relative;
+        }
+
+        .quote span {
+            color: var(--gold-light);
+            font-size: 35px;
+        }
+
+
+        /* =========================================
+           SECTION
+        ========================================= */
+
+        section.content-section {
+            padding: 130px 7vw;
+            position: relative;
+        }
+
+        .section-header {
+            max-width: 800px;
+            margin-bottom: 70px;
+        }
+
+        .section-kicker {
+            font-family: var(--hand);
+            color: var(--gold-light);
+            font-size: 23px;
+            margin-bottom: 8px;
+        }
+
+        .section-title {
+            font-family: var(--serif);
+            font-size: clamp(50px, 7vw, 100px);
+            line-height: .9;
+            font-weight: 400;
+            letter-spacing: -3px;
+        }
+
+        .section-description {
+            margin-top: 25px;
+            color: var(--muted);
+            max-width: 650px;
+            line-height: 1.8;
+        }
+
+
+        /* =========================================
+           EXPERTISE
+        ========================================= */
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2px;
+
+            background: rgba(255,255,255,.1);
+        }
+
+        .expertise-card {
+            background: #0d0d0d;
+            min-height: 280px;
+            padding: 40px;
+
+            border: 1px solid rgba(255,255,255,.05);
+
+            transition: .4s;
+        }
+
+        .expertise-card:hover {
+            background: #151515;
+            transform: translateY(-5px);
+        }
+
+        .expertise-number {
+            color: var(--gold);
+            font-family: var(--serif);
+            font-size: 22px;
+        }
+
+        .expertise-card h3 {
+            font-family: var(--serif);
+            font-size: 32px;
+            font-weight: 400;
+            margin: 50px 0 15px;
+        }
+
+        .expertise-card p {
+            color: #999;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+
+        /* =========================================
+           EXPERIENCE TIMELINE
+        ========================================= */
+
+        .timeline {
+            max-width: 1000px;
+            margin: auto;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 130px;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: rgba(255,255,255,.2);
+        }
+
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 130px 1fr;
+            gap: 60px;
+
+            padding: 45px 0;
+            border-bottom: 1px solid rgba(255,255,255,.08);
+
+            position: relative;
+        }
+
+        .timeline-year {
+            font-family: var(--serif);
+            font-size: 18px;
+            color: var(--gold-light);
+        }
+
+        .timeline-content {
+            position: relative;
+        }
+
+        .timeline-content::before {
+            content: "";
+            position: absolute;
+
+            left: -66px;
+            top: 6px;
+
+            width: 10px;
+            height: 10px;
+
+            border: 2px solid var(--gold);
+            background: var(--black);
+            border-radius: 50%;
+        }
+
+        .timeline-content h3 {
+            font-family: var(--serif);
+            font-size: 32px;
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+
+        .timeline-company {
+            color: var(--gold-light);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 18px;
+        }
+
+        .timeline-content p {
+            color: #999;
+            font-size: 14px;
+            line-height: 1.8;
+            max-width: 700px;
+        }
+
+
+        /* =========================================
+           CASE STUDIES
+        ========================================= */
+
+        .case-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .case {
+            min-height: 400px;
+            padding: 45px;
+
+            background:
+                linear-gradient(135deg, #181818, #0c0c0c);
+
+            border: 1px solid rgba(255,255,255,.1);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        .case::after {
+            content: "";
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            border: 1px solid rgba(181,150,99,.25);
+            border-radius: 50%;
+            right: -100px;
+            bottom: -100px;
+        }
+
+        .case-tag {
+            color: var(--gold-light);
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .case h3 {
+            font-family: var(--serif);
+            font-size: 38px;
+            font-weight: 400;
+            max-width: 500px;
+            margin: 25px 0;
+        }
+
+        .case p {
+            color: #999;
+            font-size: 13px;
+            line-height: 1.8;
+            max-width: 600px;
+        }
+
+
+        /* =========================================
+           INSIGHTS
+        ========================================= */
+
+        .insights-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+
+        .insight {
+            background: #eeeae0;
+            color: #111;
+            padding: 35px;
+            min-height: 300px;
+
+            transition: .3s;
+        }
+
+        .insight:hover {
+            transform: rotate(-1deg) translateY(-5px);
+        }
+
+        .insight-number {
+            font-family: var(--hand);
+            color: #8d7349;
+            font-size: 24px;
+        }
+
+        .insight h3 {
+            font-family: var(--serif);
+            font-size: 28px;
+            font-weight: 400;
+            margin: 45px 0 15px;
+        }
+
+        .insight p {
+            font-size: 13px;
+            line-height: 1.7;
+            color: #555;
+        }
+
+
+        /* =========================================
+           CONTACT
+        ========================================= */
+
+        .contact {
+            min-height: 70vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            padding: 100px 20px;
+
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(181,150,99,.13),
+                    transparent 45%
+                );
+        }
+
+        .contact h2 {
+            font-family: var(--serif);
+            font-size: clamp(60px, 9vw, 130px);
+            font-weight: 400;
+            line-height: .85;
+            letter-spacing: -5px;
+        }
+
+        .contact p {
+            color: #999;
+            max-width: 600px;
+            margin: 30px auto;
+            line-height: 1.7;
+        }
+
+        .contact-button {
+            display: inline-block;
+            background: var(--gold);
+            color: #111;
+
+            padding: 18px 35px;
+
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 11px;
+
+            transition: .3s;
+        }
+
+        .contact-button:hover {
+            background: var(--gold-light);
+            transform: translateY(-4px);
+        }
+
+
+        /* =========================================
+           FOOTER
+        ========================================= */
+
+        footer {
+            border-top: 1px solid rgba(255,255,255,.1);
+
+            padding: 30px 7vw;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            color: #777;
+            font-size: 11px;
+        }
+
+        .footer-name {
+            color: var(--gold-light);
+            font-family: var(--serif);
+            font-size: 20px;
+        }
+
+
+        /* =========================================
+           MOBILE
+        ========================================= */
+
+        @media(max-width: 900px) {
+
+            nav {
+                height: 70px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                padding-top: 120px;
+            }
+
+            .hero-content {
+                order: -1;
+            }
+
+            .photo-card {
+                max-width: 500px;
+            }
+
+            .notebook-inner {
+                grid-template-columns: 1fr;
+            }
+
+            .metrics {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .metric:nth-child(3n) {
+                border-right: 1px solid rgba(255,255,255,.18);
+            }
+
+            .metric:nth-child(2n) {
+                border-right: none;
+            }
+
+            .metric:nth-child(n+3) {
+                border-top: 1px solid rgba(255,255,255,.18);
+            }
+
+            .expertise-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .case-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .insights-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        @media(max-width: 600px) {
+
+            .hero {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .hero-title {
+                font-size: 58px;
+            }
+
+            .floating-label {
+                left: -5px;
+                font-size: 22px;
+            }
+
+            .experience-note {
+                left: 0;
+            }
+
+            .photo-card img {
+                height: 400px;
+            }
+
+            .notebook {
+                padding: 10px;
+                border-radius: 15px;
+            }
+
+            .page {
+                padding: 45px 25px;
+            }
+
+            .metrics {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .metric-number {
+                font-size: 24px;
+            }
+
+            .expertise-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline::before {
+                display: none;
+            }
+
+            .timeline-item {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .timeline-content::before {
+                display: none;
+            }
+
+            .case {
+                min-height: 350px;
+                padding: 30px;
+            }
+
+            .contact h2 {
+                font-size: 65px;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     NAVIGATION
+========================================= -->
+
+<nav>
+
+    <a href="#home" class="logo">
+        <span class="logo-mark">AG</span>
+        <span class="logo-name">Ahmed Gad</span>
+    </a>
+
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#impact">Impact</a>
+        <a href="#experience">Experience</a>
+        <a href="#insights">Insights</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <a href="#contact" class="nav-button">
+        Let's Connect →
+    </a>
+
+</nav>
+
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<header class="hero" id="home">
+
+    <div class="texture"></div>
+
+    <div class="hero-left">
+
+        <div class="floating-label">
+            Strategic Growth.<br>
+            Lasting Value.<br>
+            Trusted Relationships.
+        </div>
+
+        <div class="photo-card">
+
+            <!-- PUT AHMED'S PHOTO HERE -->
+            <img src="ahmed.jpg" alt="Ahmed Gad">
+
+            <div class="photo-caption">
+                Driving Growth in Luxury<br>
+                Real Estate & Investment Markets
+            </div>
+
+        </div>
+
+        <div class="experience-note">
+            <strong>13+</strong>
+            <span>
+                Years of experience in
+                Saudi Arabia, GCC &
+                international markets.
+            </span>
+        </div>
+
+    </div>
+
+
+    <div class="hero-content">
+
+        <div class="hello">
+            Hi, I'm
+        </div>
+
+        <h1 class="hero-title">
+            Ahmed Gad
+        </h1>
+
+        <div class="position">
+            Senior Sales & Business Development Director
+        </div>
+
+        <div class="specialties">
+
+            <span>Luxury Real Estate</span>
+            <span>Investor Relations</span>
+            <span>Market Expansion</span>
+            <span>Strategic Partnerships</span>
+            <span>KSA & GCC</span>
+
+        </div>
+
+        <p class="hero-description">
+
+            With over 13 years of experience across Saudi Arabia,
+            the GCC and international markets, I drive sales growth,
+            build strategic partnerships and create long-term value
+            for investors, developers and clients.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#experience" class="btn primary">
+                Explore My Journey
+            </a>
+
+            <a href="#impact" class="btn secondary">
+                View My Impact
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     NOTEBOOK / IMPACT
+========================================= -->
+
+<section class="notebook-wrapper" id="impact">
+
+    <div class="notebook">
+
+        <div class="notebook-inner">
+
+
+            <!-- LEFT PAGE -->
+
+            <div class="page page-dark">
+
+                <div class="small-label">
+                    Executive
+                </div>
+
+                <h2 class="page-title">
+                    My<br>
+                    Impact
+                </h2>
+
+
+                <div class="metrics">
+
+                    <div class="metric">
+                        <div class="metric-number">
+                            SAR 80M+
+                        </div>
+                        <div class="metric-label">
+                            Sales Generated
+                        </div>
+                    </div>
+
+                    <div class="metric">
+                        <div class="metric-number">
+                            SAR 100M+
+                        </div>
+                        <div class="metric-label">
+                            Development Opportunities
+                        </div>
+                    </div>
+
+                    <div class="metric">
+                        <div class="metric-number">
+                            38
+                        </div>
+                        <div class="metric-label">
+                            Sales Professionals Led
+                        </div>
+                    </div>
+
+                    <div class="metric">
+                        <div class="metric-number">
+                            1,000+
+                        </div>
+                        <div class="metric-label">
+                            Broker Network Supervised
+                        </div>
+                    </div>
+
+                    <div class="metric">
+                        <div class="metric-number">
+                            250+
+                        </div>
+                        <div class="metric-label">
+                            Clients Advised
+                        </div>
+                    </div>
+
+                    <div class="metric">
+                        <div class="metric-number">
+                            246+
+                        </div>
+                        <div class="metric-label">
+                            Completed Files
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RIGHT PAGE -->
+
+            <div class="page page-light">
+
+                <div class="small-label">
+                    My
+                </div>
+
+                <h2 class="page-title">
+                    Story
+                </h2>
+
+                <p class="story-text">
+
+                    I work at the intersection of luxury real estate,
+                    investor relations and strategic growth — helping
+                    organizations identify opportunities, build
+                    strong partnerships and expand across high-value
+                    markets.
+
+                </p>
+
+
+                <ul class="story-list">
+
+                    <li>
+                        13+ years of experience across Saudi Arabia & GCC
+                    </li>
+
+                    <li>
+                        Proven track record in sales and business development
+                    </li>
+
+                    <li>
+                        Experience leading high-performing sales teams
+                    </li>
+
+                    <li>
+                        Extensive HNWI and investor relationships
+                    </li>
+
+                    <li>
+                        Strategic market expansion experience
+                    </li>
+
+                    <li>
+                        Focus on trust, clarity and long-term value
+                    </li>
+
+                </ul>
+
+
+                <div class="quote">
+
+                    <span>“</span>
+
+                    It's not only about closing deals.
+                    It's about building trust that lasts.
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     ABOUT
+========================================= -->
+
+<section class="content-section" id="about">
+
+    <div class="section-header">
+
+        <div class="section-kicker">
+            About Ahmed
+        </div>
+
+        <h2 class="section-title">
+            Strategy.<br>
+            Relationships.<br>
+            Growth.
+        </h2>
+
+        <p class="section-description">
+
+            A senior sales and business development leader with
+            extensive experience across luxury real estate,
+            investment migration, investor relations and market
+            expansion.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     EXPERTISE
+========================================= -->
+
+<section class="content-section" id="expertise">
+
+    <div class="section-header">
+
+        <div class="section-kicker">
+            What I Do
+        </div>
+
+        <h2 class="section-title">
+            Core<br>
+            Expertise
+        </h2>
+
+    </div>
+
+
+    <div class="expertise-grid">
+
+
+        <div class="expertise-card">
+
+            <div class="expertise-number">01</div>
+
+            <h3>
+                Luxury Real Estate
+            </h3>
+
+            <p>
+                Sales strategy, project launches, high-value
+                transactions and premium real estate development
+                across Saudi Arabia and international markets.
+            </p>
+
+        </div>
+
+
+        <div class="expertise-card">
+
+            <div class="expertise-number">02</div>
+
+            <h3>
+                Investor Relations
+            </h3>
+
+            <p>
+                Building long-term relationships with HNWIs,
+                investors, family groups and strategic capital
+                partners.
+            </p>
+
+        </div>
+
+
+        <div class="expertise-card">
+
+            <div class="expertise-number">03</div>
+
+            <h3>
+                Sales Leadership
+            </h3>
+
+            <p>
+                Building high-performing teams, developing sales
+                strategies and managing large broker networks.
+            </p>
+
+        </div>
+
+
+        <div class="expertise-card">
+
+            <div class="expertise-number">04</div>
+
+            <h3>
+                Market Expansion
+            </h3>
+
+            <p>
+                Identifying new opportunities, understanding local
+                market dynamics and establishing strong regional
+                partnerships.
+            </p>
+
+        </div>
+
+
+        <div class="expertise-card">
+
+            <div class="expertise-number">05</div>
+
+            <h3>
+                Strategic Partnerships
+            </h3>
+
+            <p>
+                Connecting developers, investors, brokers and
+                corporate partners to accelerate business growth.
+            </p>
+
+        </div>
+
+
+        <div class="expertise-card">
+
+            <div class="expertise-number">06</div>
+
+            <h3>
+                Investment Sales
+            </h3>
+
+            <p>
+                Supporting clients through investment decisions,
+                cross-border opportunities and long-term asset
+                diversification.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     EXPERIENCE
+========================================= -->
+
+<section class="content-section" id="experience">
+
+    <div class="section-header">
+
+        <div class="section-kicker">
+            Career Journey
+        </div>
+
+        <h2 class="section-title">
+            Experience
+        </h2>
+
+    </div>
+
+
+    <div class="timeline">
+
+
+        <!-- DAR GLOBAL -->
+
+        <div class="timeline-item">
+
+            <div class="timeline-year">
+                2024 — 2025
+            </div>
+
+            <div class="timeline-content">
+
+                <h3>
+                    Senior Sales Director
+                </h3>
+
+                <div class="timeline-company">
+                    DarGlobal
+                </div>
+
+                <p>
+                    Led 38 sales professionals and supervised
+                    a network of more than 1,000 external brokers
+                    across Saudi Arabia. Focused on sales strategy,
+                    project launches, client acquisition and
+                    high-value real estate opportunities.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- REACH IMMIGRATION -->
+
+        <div class="timeline-item">
+
+            <div class="timeline-year">
+                2018 — 2023
+            </div>
+
+            <div class="timeline-content">
+
+                <h3>
+                    Senior Immigration Consultant
+                </h3>
+
+                <div class="timeline-company">
+                    Reach Immigration
+                </div>
+
+                <p>
+                    Advised Saudi market clients on citizenship
+                    and residency-by-investment programs, while
+                    developing high-value relationships with HNWIs
+                    and families.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- AJYAL -->
+
+        <div class="timeline-item">
+
+            <div class="timeline-year">
+                2015 — 2018
+            </div>
+
+            <div class="timeline-content">
+
+                <h3>
+                    Sales & Marketing Director
+                </h3>
+
+                <div class="timeline-company">
+                    Ajyal
+                </div>
+
+                <p>
+                    Led the company's transformation into a real
+                    estate developer, established new project
+                    pipelines and secured real estate opportunities
+                    exceeding SAR 100M.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- LIBYA -->
+
+        <div class="timeline-item">
+
+            <div class="timeline-year">
+                Earlier Career
+            </div>
+
+            <div class="timeline-content">
+
+                <h3>
+                    Country Branch Manager
+                </h3>
+
+                <div class="timeline-company">
+                    Reach World — Libya
+                </div>
+
+                <p>
+                    Established the Libya operation from the ground
+                    up, including registration, recruitment,
+                    training and operational development.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     CASE STUDIES
+========================================= -->
+
+<section class="content-section">
+
+    <div class="section-header">
+
+        <div class="section-kicker">
+            Selected Achievements
+        </div>
+
+        <h2 class="section-title">
+            Turning<br>
+            Opportunities<br>
+            Into Impact.
+        </h2>
+
+    </div>
+
+
+    <div class="case-grid">
+
+
+        <article class="case">
+
+            <div>
+                <div class="case-tag">
+                    Real Estate Development
+                </div>
+
+                <h3>
+                    SAR 100M+ Development Opportunities
+                </h3>
+
+                <p>
+                    Identified and secured high-value real estate
+                    opportunities while supporting development,
+                    investor acquisition and market positioning.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="case">
+
+            <div>
+                <div class="case-tag">
+                    Sales Leadership
+                </div>
+
+                <h3>
+                    38 Professionals + 1,000+ Brokers
+                </h3>
+
+                <p>
+                    Led a large sales organization while managing
+                    an extensive external broker network across
+                    the Saudi market.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="case">
+
+            <div>
+                <div class="case-tag">
+                    Market Expansion
+                </div>
+
+                <h3>
+                    Building Markets From The Ground Up
+                </h3>
+
+                <p>
+                    Established operations, developed teams and
+                    created market presence in new territories,
+                    including the Libya branch.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="case">
+
+            <div>
+                <div class="case-tag">
+                    Investor Relations
+                </div>
+
+                <h3>
+                    Long-Term Investor Relationships
+                </h3>
+
+                <p>
+                    Built trusted relationships with HNWIs,
+                    investors, families, brokers and strategic
+                    partners across multiple markets.
+                </p>
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     INSIGHTS
+========================================= -->
+
+<section class="content-section" id="insights">
+
+    <div class="section-header">
+
+        <div class="section-kicker">
+            Thought Leadership
+        </div>
+
+        <h2 class="section-title">
+            Insights
+        </h2>
+
+        <p class="section-description">
+
+            Perspectives on luxury real estate, investor relations,
+            market expansion and sales leadership across Saudi Arabia
+            and the GCC.
+
+        </p>
+
+    </div>
+
+
+    <div class="insights-grid">
+
+
+        <article class="insight">
+
+            <div class="insight-number">
+                01
+            </div>
+
+            <h3>
+                Understanding the Saudi Luxury Real Estate Buyer
+            </h3>
+
+            <p>
+                Why today's high-net-worth buyers value clarity,
+                trust and long-term value when making investment
+                decisions.
+            </p>
+
+        </article>
+
+
+        <article class="insight">
+
+            <div class="insight-number">
+                02
+            </div>
+
+            <h3>
+                Market Expansion Is More Than Geography
+            </h3>
+
+            <p>
+                Successful market expansion requires insight,
+                relationships, partnerships and execution.
+            </p>
+
+        </article>
+
+
+        <article class="insight">
+
+            <div class="insight-number">
+                03
+            </div>
+
+            <h3>
+                Investor Relations Beyond Transactions
+            </h3>
+
+            <p>
+                Building investor confidence through transparency,
+                understanding and long-term relationships.
+            </p>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     CONTACT
+========================================= -->
+
+<section class="contact" id="contact">
+
+    <div class="section-kicker">
+        Let's Build What's Next
+    </div>
+
+    <h2>
+        Start a<br>
+        Conversation.
+    </h2>
+
+    <p>
+        Open to strategic partnerships, executive opportunities,
+        investor relationships and business development
+        conversations across Saudi Arabia, GCC and international
+        markets.
+    </p>
+
+    <a href="mailto:YOUR_EMAIL@example.com"
+       class="contact-button">
+        Get In Touch →
+    </a>
+
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <div class="footer-name">
+        Ahmed Gad
+    </div>
+
+    <div>
+        Luxury Real Estate · Strategic Growth · Investor Relations
+    </div>
+
+    <div>
+        © <span id="year"></span> Ahmed Gad
+    </div>
+
+</footer>
+
+
+
+<script>
+
+    // Current year
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+
+    // Simple scroll reveal
+    const observer =
+        new IntersectionObserver(
+            (entries) => {
+
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.style.opacity = "1";
+                        entry.target.style.transform =
+                            "translateY(0)";
+
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.12
+            }
+        );
+
+
+    document
+        .querySelectorAll(
+            ".expertise-card, .case, .insight, .timeline-item"
+        )
+        .forEach(el => {
+
+            el.style.opacity = "0";
+            el.style.transform = "translateY(30px)";
+            el.style.transition =
+                "opacity .7s ease, transform .7s ease";
+
+            observer.observe(el);
+
+        });
+
+</script>
+
+
+</body>
+</html>

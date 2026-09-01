@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fef9f2;
+  --foreground: #1d1b17;
+  --surface: #fef9f2;
+  --surface-bright: #fef9f2;
+  --surface-card: #EDE5DC;
+  --surface-container: #f2ede6;
+  --surface-container-low: #f8f3ec;
+  --surface-container-high: #ece7e1;
+  --surface-container-highest: #e7e2db;
+  --surface-variant: #e7e2db;
+  --surface-dim: "#ded9d3";
+  --primary: #000000;
+  --primary-container: #211a16;
+  --on-primary: #ffffff;
+  --on-background: #1d1b17;
+  --on-surface: #1d1b17;
+  --on-surface-variant: #4d4540;
+  --secondary: #8c4f10;
+  --secondary-container: #fdad67;
+  --secondary-fixed: #ffdcc2;
+  --secondary-fixed-dim: #ffb77b;
+  --border-subtle: #D4C8BC;
+  --outline: #7f756f;
+  --outline-variant: #d0c4bd;
+  --primary-fixed: #ede0d9;
+  --primary-fixed-dim: #d0c4bd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--on-surface);
+  font-family: var(--font-dm-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* =========================================
+   VINTAGE PAPER GRAIN & JOURNAL TEXTURES
+========================================= */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  z-index: 999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Dotted journal grid background */
+.journal-page-texture {
+  background-color: #EDE5DC;
+  background-image: radial-gradient(#D4C8BC 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.journal-paper-light {
+  background-color: #fef9f2;
+  background-image: radial-gradient(#D4C8BC 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
+
+/* =========================================
+   POLAROID & SCRAPBOOK STYLING
+========================================= */
+.polaroid-frame {
+  background-color: #fef9f2;
+  padding: 14px 14px 48px 14px;
+  border: 0.5px solid #D4C8BC;
+  position: relative;
+  box-shadow: 0 15px 35px rgba(29, 27, 23, 0.08), 0 3px 8px rgba(29, 27, 23, 0.04);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+
+.polaroid-frame:hover {
+  transform: rotate(0deg) scale(1.015);
+  box-shadow: 0 20px 45px rgba(29, 27, 23, 0.12);
+}
+
+.tape-strip {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  width: 90px;
+  height: 26px;
+  background-color: rgba(237, 224, 217, 0.75);
+  border: 1px solid rgba(212, 200, 188, 0.4);
+  backdrop-filter: blur(2px);
+  z-index: 20;
+}
+
+.paper-clip {
+  position: absolute;
+  top: -18px;
+  right: 24px;
+  width: 28px;
+  height: 56px;
+  border: 2.5px solid #7f756f;
+  border-radius: 14px;
+  z-index: 25;
+  transform: rotate(12deg);
+  background: transparent;
+  pointer-events: none;
+}
+
+.paper-clip::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 18px;
+  border: 2px solid #7f756f;
+  border-radius: 9px;
+  border-bottom: none;
+}
+
+/* Copper watermark oversized numbers */
+.copper-watermark {
+  color: #8c4f10;
+  font-family: var(--font-playfair), serif;
+  font-weight: 900;
+  line-height: 1;
+  opacity: 0.18;
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Handwritten copper notes */
+.handwritten-copper {
+  font-family: var(--font-caveat), cursive;
+  color: #8c4f10;
+}
+
+/* Custom scrollbar matching paper aesthetic */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f3ec;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d0c4bd;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8c4f10;
+}
+
+/* Selection */
+::selection {
+  background: #ffdcc2;
+  color: #2e1500;
+}
