@@ -385,5 +385,5 @@ export const CONTACT_DATA = {
   description:
     "Open to strategic partnerships, executive opportunities, investor relationships and business development conversations across Saudi Arabia, GCC and international markets.",
   buttonText: "Get In Touch",
-  email: "contact@ahmedgad.com",
+  email: "a.g600900@gmail.com",
 };
